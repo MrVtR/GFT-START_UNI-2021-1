@@ -27,3 +27,20 @@ var listaFruta = [
   { nome: 'Uva', cor: 'Roxa' },
 ];
 console.log(listaFruta);
+idade = prompt('Qual a sua idade?');
+if (idade > 18) alert('Maior de idade');
+else alert('Menor de idade');
+
+var count = 0;
+while (count < 5) {
+  alert('If: ' + count);
+  count++;
+}
+
+var count2;
+for (count = 0; count <= 5; count++) alert(count);
+
+var d = new Date();
+alert(d.getDay());
+alert(d.getHours());
+alert(d.getMinutes());
