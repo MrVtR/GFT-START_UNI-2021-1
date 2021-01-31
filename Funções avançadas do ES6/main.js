@@ -107,7 +107,7 @@ const obj2 = {
 console.log(obj2);
  */
 
-//Destructuring
+/* //Destructuring
 var arr = ['Apple', 'Banana', 'Orange', ['Tomato']];
 var [apple, banana, orange, [tomato]] = [
   'Apple',
@@ -143,4 +143,57 @@ console.log(fruitName);
 function sum([a, b] = [0, 0]) {
   return a + b;
 }
-console.log(sum([5, 5]));
+console.log(sum([5, 5])); */
+
+//Symbols ->identificador único(Semelhante a chave primária)
+const uniqueId = Symbol('Hello'); //Debug
+console.log(uniqueId);
+
+//Propiedades privadas
+const obj = {
+  [uniqueId]: 'Hello',
+};
+console.log(obj);
+console.log(Object.keys(obj));
+console.log(Object.getOwnPropertySymbols(obj));
+
+//Well known symbols
+Symbol.iterator;
+Symbol.split;
+Symbol.toStringTag;
+const obj2 = {
+  [Symbol.iterator]() {
+    //Iteração do array
+  },
+};
+//Semelhante ao iterator em C
+const arr = [1, 2, 3, 4];
+const it = arr[Symbol.iterator]();
+while (true) {
+  let { value, done } = it.next();
+  if (done) break;
+  console.log(value);
+}
+console.log('For of:');
+for (let value of arr) {
+  console.log(value);
+}
+const str = 'Digital Innovation One';
+console.log('Object:');
+const obj3 = {
+  values: [1, 2, 3, 4],
+  [Symbol.iterator]() {
+    let i = 0;
+    return {
+      next: () => {
+        i++;
+        return {
+          value: this.values[i - 1],
+          done: i > this.values.length,
+        };
+      },
+    };
+  },
+};
+const arr2 = [...obj3];
+console.log(arr2);
