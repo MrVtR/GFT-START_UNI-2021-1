@@ -26,7 +26,7 @@ function multiply(a, b = randomNumber()) {
 }
 console.log(multiply(5));
 console.log(multiply(5)); */
-var prop1 = 'Digital Innovation One';
+/* var prop1 = 'Digital Innovation One';
 function method1() {
   console.log('method called');
 }
@@ -58,4 +58,49 @@ var objName = {
 objMethod.method1();
 console.log(objMethodFunction.sum(5, 6));
 console.log(objMethodFunctionShort.sum(5, 7));
-console.log(objName);
+console.log(objName); */
+
+//Rest, Spreading e Destructuring
+
+//Maneira antiga
+function sum(a, b) {
+  var value = 0;
+  for (var i = 0; i < arguments.length; i++) value += arguments[i];
+  return value;
+}
+console.log(sum(5, 5, 5, 2, 3));
+
+//Maneira Nova -> Rest e Spread operator ...
+//Spread -> Strings, arrays, objects literais e objects iteráveis
+function sum2(...args) {
+  return args.reduce((acc, value) => acc + value, 0);
+}
+console.log(sum2(5, 5, 5, 2, 3));
+
+const sumArrow = (...rest) => {
+  return multiply(...rest);
+};
+
+const multiply = (...args) => args.reduce((acc, value) => acc * value, 1);
+
+console.log(sumArrow(5, 5, 5, 2, 3));
+
+//Spreading -> Composição em outro elemento
+const str = 'Digital Innovation One';
+const arr = [1, 2, 3, 4];
+function logArgs(...args) {
+  console.log(args);
+}
+// const arr2 = arr.concat([5, 6, 7]);
+const arr2 = [5, 6, 7, ...arr];
+console.log(arr2);
+logArgs(...arr);
+
+const obj = {
+  test: 123,
+};
+const obj2 = {
+  ...obj,
+  test2: 'hello',
+};
+console.log(obj2);
