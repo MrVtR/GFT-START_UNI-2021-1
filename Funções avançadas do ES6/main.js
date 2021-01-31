@@ -199,7 +199,7 @@ const arr2 = [...obj3];
 console.log(arr2);
  */
 
-//Generators
+/* //Generators
 function* hello() {
   console.log('Hello');
   yield 1;
@@ -237,3 +237,74 @@ const obj = {
 for (let value of obj) {
   console.log(value);
 }
+ */
+
+//Callback e promises
+function doS(callback) {
+  setTimeout(function () {
+    callback('First data');
+  }, 1000);
+}
+function doOt(callback) {
+  setTimeout(function () {
+    callback('Second data');
+  }, 1000);
+}
+//Callback hell
+function doAll() {
+  try {
+    doS(function (data) {
+      var pData = data.split('');
+      try {
+        doOt(function (data2) {
+          var pData2 = data2.split('');
+          try {
+            setTimeout(function () {
+              console.log(pData, pData2);
+            }, 1000);
+          } catch (err) {}
+        });
+      } catch (err) {}
+    });
+  } catch (err) {}
+}
+doAll();
+
+//Promise
+//Pending
+//Fulfilled
+//Rejected
+
+const doSomethingPromise = () =>
+  new Promise((resolve, reject) => {
+    setTimeout(function () {
+      resolve('First data');
+    }, 1000);
+  });
+
+const doOtherPromise = () =>
+  new Promise((resolve, reject) => {
+    setTimeout(function () {
+      resolve('Second data');
+    }, 1000);
+  });
+//Tratamento de erros mais fácil
+
+//Todas as promises devem ser executadas e retornadas ao Data
+Promise.all([doSomethingPromise(), doOtherPromise()]).then((data) => {
+  console.log(data[0].split(''));
+  console.log(data[1].split(''));
+});
+//Promise que retornar primeiro
+Promise.race([doSomethingPromise(), doOtherPromise()]).then((data) => {
+  console.log(data);
+});
+
+//Forma Sequencial de executar Promise
+doSomethingPromise()
+  .then((data) => {
+    console.log(data.split(''));
+    return doOtherPromise();
+  })
+  .then((data2) => console.log(data2.split('')))
+  .catch((error) => console.log('Ops', error));
