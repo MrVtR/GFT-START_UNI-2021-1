@@ -72,6 +72,7 @@ console.log(sum(5, 5, 5, 2, 3));
 
 //Maneira Nova -> Rest e Spread operator ...
 //Spread -> Strings, arrays, objects literais e objects iteráveis
+//Rest -> Argumentos em furma de array, sem limites
 function sum2(...args) {
   return args.reduce((acc, value) => acc + value, 0);
 }
