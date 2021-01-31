@@ -60,7 +60,7 @@ console.log(objMethodFunction.sum(5, 6));
 console.log(objMethodFunctionShort.sum(5, 7));
 console.log(objName); */
 
-//Rest, Spreading e Destructuring
+/* //Rest, Spreading e Destructuring
 
 //Maneira antiga
 function sum(a, b) {
@@ -105,3 +105,42 @@ const obj2 = {
   test2: 'hello',
 };
 console.log(obj2);
+ */
+
+//Destructuring
+var arr = ['Apple', 'Banana', 'Orange', ['Tomato']];
+var [apple, banana, orange, [tomato]] = [
+  'Apple',
+  'Banana',
+  'Orange',
+  ['Tomato'],
+];
+console.log(tomato);
+
+var obj = {
+  name: 'Celso',
+  props: {
+    age: 26,
+    favoriteColors: ['Black', 'Blue'],
+  },
+};
+// var name = obj.name;
+var { name: name2 } = obj;
+var {
+  props: {
+    age: age2,
+    favoriteColors: [color1, color2],
+  },
+} = obj;
+console.log(name2);
+console.log(age2);
+console.log(color1);
+var arr = [{ name: 'Apple', type: 'Fruit' }];
+var fruit1 = arr[0].name;
+let [{ name: fruitName }] = arr;
+console.log(fruitName);
+
+function sum([a, b] = [0, 0]) {
+  return a + b;
+}
+console.log(sum([5, 5]));
