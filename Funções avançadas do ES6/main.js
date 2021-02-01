@@ -238,7 +238,7 @@ for (let value of obj) {
   console.log(value);
 }
  */
-
+/* 
 //Callback e promises
 function doS(callback) {
   setTimeout(function () {
@@ -307,4 +307,51 @@ doSomethingPromise()
     return doOtherPromise();
   })
   .then((data2) => console.log(data2.split('')))
-  .catch((error) => console.log('Ops', error));
+  .catch((error) => console.log('Ops', error)); */
+
+//Fetch
+fetch('/data.json')
+  .then((responseStream) => {
+    if (responseStream.status === 200) {
+      return responseStream.json();
+    } else {
+      throw new Error('Request error');
+    }
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log('Erro: ', err);
+  });
+
+//Async and Await
+//Await espera a promise declarada finalizar
+const asyncTimer = () =>
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(12345);
+    }, 1000);
+  });
+const simpleFunction = async () => {
+  const data = await asyncTimer();
+  console.log(data);
+  const dataJSON = await fetch('/data.json').then((resStream) =>
+    resStream.json(),
+  );
+  return dataJSON;
+};
+const simpleFunctionParallel = async () => {
+  const data = await Promise.all([
+    asyncTimer(),
+    fetch('/data.json').then((resStream) => resStream.json()),
+  ]);
+  return data;
+};
+simpleFunction().then((data) => {
+  console.log(data);
+});
+
+simpleFunctionParallel().then((data) => {
+  console.log(data);
+});
