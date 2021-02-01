@@ -308,7 +308,7 @@ doSomethingPromise()
   })
   .then((data2) => console.log(data2.split('')))
   .catch((error) => console.log('Ops', error)); */
-
+/* 
 //Fetch
 fetch('/data.json')
   .then((responseStream) => {
@@ -355,3 +355,22 @@ simpleFunction().then((data) => {
 simpleFunctionParallel().then((data) => {
   console.log(data);
 });
+ */
+
+//Event Emitter -> Node
+
+const EventEmitter = require('events');
+const { setTimeout } = require('timers');
+class Users extends EventEmitter {
+  userLogged(data) {
+    setTimeout(() => {
+      this.emit('User logged', data);
+    }, 2000);
+  }
+}
+const users = new Users();
+users.once('User logged', (data) => {
+  console.log(data);
+});
+users.userLogged({ user: 'Vítor Ribeiro' });
+users.userLogged({ user: 'Teste 2' });
