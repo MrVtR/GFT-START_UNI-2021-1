@@ -356,7 +356,7 @@ simpleFunctionParallel().then((data) => {
   console.log(data);
 });
  */
-
+/* 
 //Event Emitter -> Node
 
 const EventEmitter = require('events');
@@ -373,4 +373,7 @@ users.once('User logged', (data) => {
   console.log(data);
 });
 users.userLogged({ user: 'Vítor Ribeiro' });
-users.userLogged({ user: 'Teste 2' });
+users.userLogged({ user: 'Teste 2' }); */
+
+//Testes unitários, integrados e funcionais
+//Mocha:
