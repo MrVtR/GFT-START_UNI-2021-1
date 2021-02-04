@@ -1,0 +1,16 @@
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\bin\Debug\net5.0\Ponto.exe
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\bin\Debug\net5.0\Ponto.deps.json
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\bin\Debug\net5.0\Ponto.runtimeconfig.json
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\bin\Debug\net5.0\Ponto.runtimeconfig.dev.json
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\bin\Debug\net5.0\Ponto.dll
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\bin\Debug\net5.0\ref\Ponto.dll
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\bin\Debug\net5.0\Ponto.pdb
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\obj\Debug\net5.0\Ponto.csprojAssemblyReference.cache
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\obj\Debug\net5.0\Ponto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\obj\Debug\net5.0\Ponto.AssemblyInfoInputs.cache
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\obj\Debug\net5.0\Ponto.AssemblyInfo.cs
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\obj\Debug\net5.0\Ponto.csproj.CoreCompileInputs.cache
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\obj\Debug\net5.0\Ponto.dll
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\obj\Debug\net5.0\ref\Ponto.dll
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\obj\Debug\net5.0\Ponto.pdb
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Ponto\obj\Debug\net5.0\Ponto.genruntimeconfig.cache
