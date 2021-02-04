@@ -12,13 +12,4 @@ namespace Ponto
       Console.WriteLine($"Ponto p2: ({p2.x},{p2.y})");
     }
   }
-  public class Ponto
-  {
-    public int x, y;
-    public Ponto(int x, int y)
-    {
-      this.x = x;
-      this.y = y;
-    }
-  }
 }
