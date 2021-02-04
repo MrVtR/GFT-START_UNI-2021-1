@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vitor\\Desktop\\CursoMVC\\CursoMVC.csproj": {}
+    "C:\\Users\\vitor\\Desktop\\GFT-START_UNI-2021-1\\Desenvolvimento de aplicações com .NET\\CursoMVC\\CursoMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vitor\\Desktop\\CursoMVC\\CursoMVC.csproj": {
+    "C:\\Users\\vitor\\Desktop\\GFT-START_UNI-2021-1\\Desenvolvimento de aplicações com .NET\\CursoMVC\\CursoMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitor\\Desktop\\CursoMVC\\CursoMVC.csproj",
+        "projectUniqueName": "C:\\Users\\vitor\\Desktop\\GFT-START_UNI-2021-1\\Desenvolvimento de aplicações com .NET\\CursoMVC\\CursoMVC.csproj",
         "projectName": "CursoMVC",
-        "projectPath": "C:\\Users\\vitor\\Desktop\\CursoMVC\\CursoMVC.csproj",
+        "projectPath": "C:\\Users\\vitor\\Desktop\\GFT-START_UNI-2021-1\\Desenvolvimento de aplicações com .NET\\CursoMVC\\CursoMVC.csproj",
         "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitor\\Desktop\\CursoMVC\\obj\\",
+        "outputPath": "C:\\Users\\vitor\\Desktop\\GFT-START_UNI-2021-1\\Desenvolvimento de aplicações com .NET\\CursoMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
