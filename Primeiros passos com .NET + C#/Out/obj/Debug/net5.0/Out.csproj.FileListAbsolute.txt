@@ -1,0 +1,16 @@
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\bin\Debug\net5.0\Out.exe
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\bin\Debug\net5.0\Out.deps.json
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\bin\Debug\net5.0\Out.runtimeconfig.json
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\bin\Debug\net5.0\Out.runtimeconfig.dev.json
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\bin\Debug\net5.0\Out.dll
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\bin\Debug\net5.0\ref\Out.dll
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\bin\Debug\net5.0\Out.pdb
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\obj\Debug\net5.0\Out.csprojAssemblyReference.cache
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\obj\Debug\net5.0\Out.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\obj\Debug\net5.0\Out.AssemblyInfoInputs.cache
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\obj\Debug\net5.0\Out.AssemblyInfo.cs
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\obj\Debug\net5.0\Out.csproj.CoreCompileInputs.cache
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\obj\Debug\net5.0\Out.dll
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\obj\Debug\net5.0\ref\Out.dll
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\obj\Debug\net5.0\Out.pdb
+C:\Users\vitor\Desktop\GFT-START_UNI-2021-1\Primeiros passos com .NET + C#\Out\obj\Debug\net5.0\Out.genruntimeconfig.cache
