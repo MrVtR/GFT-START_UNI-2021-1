@@ -31,7 +31,7 @@ namespace CursoAPI.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Produto>> GetProduto(int id)
         {
-            var produto = await _context.Produtos.Include("Categoria").FirstOrDefaultAsync( x => x.Id == id);
+            var produto = await _context.Produtos.Include("Categoria").FirstOrDefaultAsync(x => x.Id == id);
 
             if (produto == null)
             {
@@ -42,8 +42,8 @@ namespace CursoAPI.Controllers
         }
 
         // PUT: api/Produtos/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProduto(int id, Produto produto)
         {
@@ -52,7 +52,7 @@ namespace CursoAPI.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(produto).State = EntityState.Modified;
+            _context.SetModified(produto);
 
             try
             {
@@ -74,8 +74,8 @@ namespace CursoAPI.Controllers
         }
 
         // POST: api/Produtos
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
         public async Task<ActionResult<Produto>> PostProduto(Produto produto)
         {

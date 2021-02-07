@@ -42,8 +42,8 @@ namespace CursoAPI.Controllers
         }
 
         // PUT: api/Categorias/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCategoria(int id, Categoria categoria)
         {
@@ -52,7 +52,7 @@ namespace CursoAPI.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(categoria).State = EntityState.Modified;
+            _context.SetModified(categoria);
 
             try
             {
@@ -74,12 +74,13 @@ namespace CursoAPI.Controllers
         }
 
         // POST: api/Categorias
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
         public async Task<ActionResult<Categoria>> PostCategoria(Categoria categoria)
         {
             _context.Categorias.Add(categoria);
+
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetCategoria", new { id = categoria.Id }, categoria);

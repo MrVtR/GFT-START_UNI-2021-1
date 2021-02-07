@@ -14,5 +14,9 @@ namespace CursoMVC.Models
         {
             optionsBuilder.UseSqlServer(connectionString:@"Server = (localdb)\mssqllocaldb;Database = CursoMVC;Integrated Security=True");
         }
+        public virtual void SetModified(object entity)
+        {
+            Entry(entity).State = EntityState.Modified;
+        }
     }
 }
